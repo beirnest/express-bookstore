@@ -3,6 +3,7 @@
     "$id": "http://example.com/example.json",
     "title": "Root Schema",
     "type": "object",
+    "additionalProperties": false,
     "default": {},
     "required": [
         "isbn",

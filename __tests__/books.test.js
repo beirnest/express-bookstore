@@ -88,6 +88,7 @@ describe("PUT /books/:id", function () {
     const response = await request(app)
         .put(`/books/${book_isbn}`)
         .send({
+          isbn: book_isbn,
           amazon_url: "https://taco.com",
           author: "mctest",
           language: "english",
